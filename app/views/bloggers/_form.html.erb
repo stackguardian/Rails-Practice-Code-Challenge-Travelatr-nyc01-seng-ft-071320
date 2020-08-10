@@ -1,0 +1,21 @@
+<%= form_for @blogger do |f|%>
+<br>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<br>
+
+<%= f.label :bio %>
+<%= f.text_field :bio, minlength: 30%>
+
+<br>
+
+<%= f.label :age %>
+<%= f.number_field :age, min: 1 %>
+
+<%= f.error_messages %>
+
+<%= f.submit %>
+
+<% end %>
